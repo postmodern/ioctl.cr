@@ -49,7 +49,7 @@ output = MyStruct.new
 
 begin
   IOCTL.ioctl(fd, IOCTL::..., pointerof(output))
-request error : IOCTL::Error
+rescue error : IOCTL::Error
   # ...
 end
 ```
